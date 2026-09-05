@@ -256,17 +256,19 @@
   .preview-card{display:flex; flex-direction:column; align-items:center; gap:16px;}
   .page-mock{
     width:100%;
-    aspect-ratio:3/4;
+    aspect-ratio:1240/1754;
     background:var(--cream);
-    border-radius:14px;
-    box-shadow:0 16px 30px rgba(15,94,103,0.16);
-    padding:18px;
+    border-radius:10px;
+    box-shadow:0 20px 34px rgba(15,94,103,0.22);
+    padding:10px;
     position:relative;
+    transition:transform .2s ease;
   }
-  .preview-card:nth-child(1) .page-mock{transform:rotate(-3deg);}
-  .preview-card:nth-child(2) .page-mock{transform:rotate(2deg);}
+  .preview-card:nth-child(1) .page-mock{transform:rotate(-4deg);}
+  .preview-card:nth-child(2) .page-mock{transform:rotate(3deg); margin-top:14px;}
   .preview-card:nth-child(3) .page-mock{transform:rotate(-2deg);}
-  .page-mock svg{width:100%;height:100%;}
+  .preview-card:hover .page-mock{transform:rotate(0deg) scale(1.02);}
+  .page-mock img{width:100%;height:100%;object-fit:cover;border-radius:4px;display:block;}
   .preview-caption{font-family:var(--font-display); font-weight:600; color:var(--teal);}
 
   /* ================= TESTIMONIALS ================= */
@@ -615,59 +617,29 @@
         Prévia do material
       </div>
       <h2>Dá uma espiadinha no que te espera</h2>
-      <p>Páginas de verdade, no mesmo estilo do kit completo — prontas para imprimir em casa ou na escola.</p>
+      <p>Páginas reais do ebook — nada de mockup, é exatamente isso que chega no seu e-mail.</p>
     </div>
 
     <div class="preview-grid">
       <div class="preview-card">
         <div class="page-mock">
-          <svg viewBox="0 0 200 260">
-            <ellipse cx="100" cy="150" rx="52" ry="42" fill="none" stroke="#1B2A3A" stroke-width="2.5"/>
-            <path d="M60 175 C40 190 35 220 55 225" fill="none" stroke="#1B2A3A" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M78 185 C65 205 65 232 82 238" fill="none" stroke="#1B2A3A" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M100 190 C100 212 100 236 100 242" fill="none" stroke="#1B2A3A" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M122 185 C135 205 135 232 118 238" fill="none" stroke="#1B2A3A" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M140 175 C160 190 165 220 145 225" fill="none" stroke="#1B2A3A" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="84" cy="140" r="4" fill="#1B2A3A"/>
-            <circle cx="116" cy="140" r="4" fill="#1B2A3A"/>
-            <path d="M88 158 Q100 166 112 158" fill="none" stroke="#1B2A3A" stroke-width="2.2" stroke-linecap="round"/>
-            <path d="M70 130 q30 -18 60 0" fill="none" stroke="#FF6F59" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
-            <path d="M62 160 q10 20 4 40" fill="none" stroke="#FFC857" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
-          </svg>
+          <img src="assets/previews/polvo.jpg" alt="Página real do ebook: desenho de um polvo para colorir, com estrela-do-mar e bolhas ao redor">
         </div>
-        <span class="preview-caption">Página de colorir</span>
+        <span class="preview-caption">Polvo</span>
       </div>
 
       <div class="preview-card">
         <div class="page-mock">
-          <svg viewBox="0 0 200 260">
-            <g fill="none" stroke="#0F5E67" stroke-width="3" stroke-linecap="square">
-              <path d="M20 30 H180 M20 30 V220 M20 220 H180 M180 30 V90 M60 30 V70 M60 70 H140 M140 70 V150 M100 70 V190 M60 190 H140 M60 110 H100 M140 110 H180 M140 150 H180 M180 150 V220 M60 190 V220"/>
-            </g>
-            <circle cx="20" cy="30" r="6" fill="#2E8B74"/>
-            <path d="M175 216 l8 8 -4 4 8 8" fill="none"/>
-            <polygon points="180,214 190,220 180,226 183,220" fill="#FFC857"/>
-          </svg>
+          <img src="assets/previews/tartaruga.jpg" alt="Página real do ebook: desenho de uma tartaruga marinha e um peixinho para colorir">
         </div>
-        <span class="preview-caption">Labirinto do mar</span>
+        <span class="preview-caption">Tartaruga e peixinho</span>
       </div>
 
       <div class="preview-card">
         <div class="page-mock">
-          <svg viewBox="0 0 200 260">
-            <g font-family="Nunito, sans-serif" font-size="17" fill="#1B2A3A" font-weight="700">
-              <text x="26" y="50">P</text><text x="46" y="50">O</text><text x="66" y="50">L</text><text x="86" y="50">V</text><text x="106" y="50">O</text><text x="126" y="50">X</text><text x="146" y="50">R</text>
-              <text x="26" y="80">M</text><text x="46" y="80">A</text><text x="66" y="80">R</text><text x="86" y="80">T</text><text x="106" y="80">Q</text><text x="126" y="80">L</text><text x="146" y="80">C</text>
-              <text x="26" y="110">S</text><text x="46" y="110">E</text><text x="66" y="110">S</text><text x="86" y="110">T</text><text x="106" y="110">R</text><text x="126" y="110">E</text><text x="146" y="110">L</text>
-              <text x="26" y="140">A</text><text x="46" y="140">P</text><text x="66" y="140">E</text><text x="86" y="140">I</text><text x="106" y="140">X</text><text x="126" y="140">E</text><text x="146" y="140">B</text>
-              <text x="26" y="170">O</text><text x="46" y="170">N</text><text x="66" y="170">D</text><text x="86" y="170">A</text><text x="106" y="170">K</text><text x="126" y="170">Z</text><text x="146" y="170">W</text>
-            </g>
-            <ellipse cx="76" cy="45" rx="60" ry="13" fill="none" stroke="#FF6F59" stroke-width="3"/>
-            <ellipse cx="52" cy="75" rx="35" ry="13" fill="none" stroke="#2E8B74" stroke-width="3"/>
-            <ellipse cx="115" cy="135" rx="58" ry="13" fill="none" stroke="#FFC857" stroke-width="3"/>
-          </svg>
+          <img src="assets/previews/cavalo-marinho.jpg" alt="Página real do ebook: desenho de um cavalo-marinho, coral e estrela-do-mar para colorir">
         </div>
-        <span class="preview-caption">Caça-palavras</span>
+        <span class="preview-caption">Cavalo-marinho</span>
       </div>
     </div>
   </div>
